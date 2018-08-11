@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+.container {
+    height: 100vh;
+}
+canvas{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.goalpost {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: calc(768px/4);
+    left:calc(1024px/4);
+    animation: goal 1s;
+}
+
+@keyframes goal {
+    0% {
+        transform: scale(1.2) rotate(3deg);  
+    }
+    10%{
+        transform: scale(1.15) rotate(-5deg);
+    }
+    40%{
+        transform: scale(1.15) rotate(1deg);
+    }
+    100%{
+       
+    }
+}
